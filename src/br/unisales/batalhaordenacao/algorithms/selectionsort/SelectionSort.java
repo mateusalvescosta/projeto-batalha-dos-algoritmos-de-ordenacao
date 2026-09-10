@@ -5,19 +5,34 @@ import br.unisales.batalhaordenacao.core.SortingAlgorithm;
 public class SelectionSort implements SortingAlgorithm {
 
     @Override
-  public void sort(int[] array) {
+    public void sort(int[] array) {
 
-        for (int i = 0; i < array.length - 1; i++) { // array.length -1 pra desconsiderar o vetor iniciando em 0
+        // Percorre o vetor até a penúltima posição.
+        // A última posição não precisa ser verificada, pois já estará ordenada ao final.
+        for (int i = 0; i < array.length - 1; i++) {
 
-            int minIndex = i; //menor valor
+            // Assume inicialmente que o menor valor está na posição atual.
+            int minIndex = i;
 
+            // Percorre o restante do vetor, começando pela posição seguinte.
             for (int j = i + 1; j < array.length; j++) {
 
-                if (array[j] < array[minIndex]) { //se o menor valor for menor que o vetor encontrado
-                    minIndex = j; //menor valor passa a ser o vetor encontrado.
+                // Compara o valor atual com o menor valor encontrado até o momento.
+                if (array[j] < array[minIndex]) {
+
+                    // Se encontrar um valor menor, guarda o índice dessa nova posição.
+                    minIndex = j;
                 }
             }
 
+            // Guarda temporariamente o valor da posição atual.
+            int temp = array[i];
+
+            // Coloca o menor valor encontrado na posição atual.
+            array[i] = array[minIndex];
+
+            // Coloca o antigo valor da posição atual onde estava o menor valor.
+            array[minIndex] = temp;
         }
     }
 
