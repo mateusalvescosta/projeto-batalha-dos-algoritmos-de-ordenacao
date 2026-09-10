@@ -28,6 +28,25 @@ Os algoritmos propostos para o projeto são:
 
 O projeto está organizado utilizando packages separados para cada algoritmo.
 
+## Desenvolvimento
+
+O desenvolvimento está sendo realizado utilizando:
+
+Java
+IntelliJ IDEA
+Git
+GitHub
+
+Cada algoritmo será desenvolvido separadamente e posteriormente integrado para realização dos testes e comparações.
+
+Disciplina
+
+Projeto e Análise de Algoritmos
+
+Professor: Alexandre Barbosa de Souza
+
+UniSales - Centro Universitário Salesiano
+
 ```text
 src/
 └── br/
@@ -42,3 +61,4 @@ src/
                 ├── bubblesort/
                 ├── mergesort/
                 └── quicksort/
+
