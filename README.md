@@ -10,19 +10,11 @@ Cada integrante do grupo será responsável pela implementação e documentaçã
 
 Os algoritmos propostos para o projeto são:
 
-- Bubble Sort
-- Insertion Sort
-- Selection Sort
-- Merge Sort
-- Quick Sort
-
-## Integrantes
-
-- Breno Clemente Pereira
-- João Victor Pereira Marques
-- Juan Pablo Rocha Hempel
-- Moacyr Filipe Pereira Del Caro
-- Mateus Alves Costa
+- Breno Clemente Pereira - SelectionSort
+- João Victor Pereira Marques - MergeSort
+- Juan Pablo Rocha Hempel - QuickSort
+- Moacyr Filipe Pereira Del Caro - BubbleSort
+- Mateus Alves Costa - InsertionSort
 
 ## Organização do projeto
 
