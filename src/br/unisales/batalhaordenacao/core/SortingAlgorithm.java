@@ -8,7 +8,7 @@ public interface SortingAlgorithm {
 
     long getSwaps();
 
-    long getExecutionTime();
+    double getExecutionTime();
 
     boolean isSorted(int[] array);
 }
