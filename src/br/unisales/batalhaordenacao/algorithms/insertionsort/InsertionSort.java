@@ -10,7 +10,7 @@ public class InsertionSort implements SortingAlgorithm {
 
     @Override
     public void sort(int[] vetor) {
-        inicio = System.currentTimeMillis();
+        inicio = System.nanoTime();
 
         // Percorre o vetor a partir da segunda posição.
         for (int i = 1; i < vetor.length; i++) {
@@ -34,7 +34,7 @@ public class InsertionSort implements SortingAlgorithm {
             this.trocas++;
         }
 
-        fim = System.currentTimeMillis();
+        fim = System.nanoTime();
     }
 
     @Override
@@ -48,8 +48,8 @@ public class InsertionSort implements SortingAlgorithm {
     }
 
     @Override
-    public double getExecutionTime() {
-        return (this.fim - this.inicio) / 1000.0;
+    public long getExecutionTime() {
+        return this.fim - this.inicio;
     }
 
     @Override

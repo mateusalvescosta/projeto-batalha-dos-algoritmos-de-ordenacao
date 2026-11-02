@@ -10,7 +10,7 @@ public class SelectionSort implements SortingAlgorithm {
 
     @Override
     public void sort(int[] array) {
-        inicio = System.currentTimeMillis();
+        inicio = System.nanoTime();
 
         // Percorre o vetor até a penúltima posição.
         // A última posição não precisa ser verificada, pois já estará ordenada ao final.
@@ -43,7 +43,7 @@ public class SelectionSort implements SortingAlgorithm {
             this.trocas++;
         }
 
-        fim = System.currentTimeMillis();
+        fim = System.nanoTime();
     }
 
     @Override
@@ -57,8 +57,8 @@ public class SelectionSort implements SortingAlgorithm {
     }
 
     @Override
-    public double getExecutionTime() {
-        return (this.fim - this.inicio) / 1000.0;
+    public long getExecutionTime() {
+        return this.fim - this.inicio;
     }
 
     @Override
