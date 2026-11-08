@@ -1,3 +1,22 @@
-# Default ignored files
-/shelf/
-/.idea/workspace.xml
+# IntelliJ IDEA
+.idea/
+
+# Arquivos compilados Java
+out/
+target/
+build/
+*.class
+
+# Configurações locais
+*.iml
+
+# Logs
+*.log
+
+# Arquivos temporários
+*.tmp
+*.bak
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
