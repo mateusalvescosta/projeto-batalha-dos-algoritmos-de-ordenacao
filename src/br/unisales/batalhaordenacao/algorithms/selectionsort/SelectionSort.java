@@ -1,10 +1,10 @@
-package selectionsort;
+package br.unisales.batalhaordenacao.algorithms.selectionsort;
 
 import br.unisales.batalhaordenacao.core.SortingAlgorithm;
 
 public class SelectionSort implements SortingAlgorithm {
-    int comparacoes = 0;
-    int trocas = 0;
+    long comparacoes = 0;
+    long trocas = 0;
     long inicio = 0;
     long fim = 0;
 

@@ -1,10 +1,10 @@
-package bubblesort;
+package br.unisales.batalhaordenacao.algorithms.bubblesort;
 
 import br.unisales.batalhaordenacao.core.SortingAlgorithm;
 
 public class BubbleSort implements SortingAlgorithm {
-    int comparacoes = 0;
-    int trocas = 0;
+    long comparacoes = 0;
+    long trocas = 0;
     long inicio = 0;
     long fim = 0;
 

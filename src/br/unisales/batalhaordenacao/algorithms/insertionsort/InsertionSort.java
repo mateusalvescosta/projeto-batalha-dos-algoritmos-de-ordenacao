@@ -1,10 +1,10 @@
-package insertionsort;
+package br.unisales.batalhaordenacao.algorithms.insertionsort;
 
 import br.unisales.batalhaordenacao.core.SortingAlgorithm;
 
 public class InsertionSort implements SortingAlgorithm {
-    int comparacoes = 0;
-    int trocas = 0;
+    long comparacoes = 0;
+    long trocas = 0;
     long inicio = 0;
     long fim = 0;
 
@@ -22,9 +22,14 @@ public class InsertionSort implements SortingAlgorithm {
             int posicaoAnterior = i - 1;
 
             // Move os elementos do vetor que são maiores que o número para uma posição à frente.
-            while (posicaoAnterior >= 0 && vetor[posicaoAnterior] > numero) {
-                vetor[posicaoAnterior + 1] = vetor[posicaoAnterior];
+            while (posicaoAnterior >= 0) {
                 this.comparacoes++;
+
+                if (vetor[posicaoAnterior] <= numero) {
+                    break;
+                }
+
+                vetor[posicaoAnterior + 1] = vetor[posicaoAnterior];
                 this.trocas++;
                 posicaoAnterior--;
             }
